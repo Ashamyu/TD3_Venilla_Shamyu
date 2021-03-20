@@ -1,6 +1,12 @@
-num1 = input('Enter first number: ')
-num2 = input('Enter second number: ')
 
-sum = float(num1) + float(num2)
+def add(a,b):
+    sum=a+b;
+    return sum;
 
-print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+def main():
+    import sys
+    print(sys.argv)
+    x=int(sys.argv[1])
+    y=int(sys.argv[2])
+    print (add(x,y))
+main()
